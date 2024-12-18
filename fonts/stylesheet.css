@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Stapel Semi Expanded';
+    src: url('Stapel-SemiExpandedMedium.eot');
+    src: local('Stapel Semi Expanded Medium'), local('Stapel-SemiExpandedMedium'),
+        url('Stapel-SemiExpandedMedium.eot?#iefix') format('embedded-opentype'),
+        url('Stapel-SemiExpandedMedium.woff2') format('woff2'),
+        url('Stapel-SemiExpandedMedium.woff') format('woff'),
+        url('Stapel-SemiExpandedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stapel';
+    src: url('Stapel-Light.eot');
+    src: local('Stapel Light'), local('Stapel-Light'),
+        url('Stapel-Light.eot?#iefix') format('embedded-opentype'),
+        url('Stapel-Light.woff2') format('woff2'),
+        url('Stapel-Light.woff') format('woff'),
+        url('Stapel-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

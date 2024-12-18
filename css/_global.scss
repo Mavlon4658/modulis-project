@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+$font-montserrat: "Montserrat", serif;
+$font-stapel-medium: 'Stapel Semi Expanded', sans-serif;
+$font-stapel-light: 'Stapel' sans-serif;
+
+// Colors
+$color-text-black: #373737;
+$color-text-dark-gray: #8E8E8E;
+$color-text-grey: #CBCBCB;
+$color-bg-white: #FFFFFF;
+$color-bg-grey: #F5F5F5;
+$color-orange: #DB761E;
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
