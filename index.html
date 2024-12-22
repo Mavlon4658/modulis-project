@@ -24,7 +24,35 @@
                 <a href="/" class="header-logo">MODULIS</a>
                 <ul>
                     <li>
-                        <a href="#">Построим</a>
+                        <a href="#">
+                            <span>Построим</span>
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 0.5L12.9952 7.25L0.00480868 7.25L6.5 0.5Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#" class="active">[Модульные дома]</a>
+                            </li>
+                            <li>
+                                <a href="#">Каркасные дома</a>
+                            </li>
+                            <li>
+                                <a href="#">Садовые домики</a>
+                            </li>
+                            <li>
+                                <a href="#">Бани</a>
+                            </li>
+                            <li>
+                                <a href="#">Беседки</a>
+                            </li>
+                            <li>
+                                <a href="#">Бытовки</a>
+                            </li>
+                            <li>
+                                <a href="#">Хозяйственные постройки</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">О компании</a>
@@ -44,28 +72,156 @@
                         <span>Связаться</span>
                     </a>
                     <a href="tel:+7 (921) 341-88-87">+7 (921) 341-88-87</a>
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
                 </div>
             </div>
         </header>
         <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <section class="mobile-menu position-fixed top-0 start-0 w-100 h-100">
+            <div class="mobile-menu-content d-flex flex-column justify-content-between h-100">
+                <div>
+                    <div class="mobile-menu-head d-flex align-items-center justify-content-between">
+                        <a href="/">MODULIS</a>
+                        <button class="mobile-menu-close">
+                            <img src="./images/times-white.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="contact-link d-flex align-items-center">
+                        <li>
+                            <a href="mailto:info@modulis.ru">info@modulis.ru</a>
+                        </li>
+                        <li>
+                            <a href="tel:+7 (921) 341-88-87">+7 (921) 341-88-87</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navs d-flex flex-column align-items-start">
+                        <li>
+                            <a href="#">
+                                <span>построим</span>
+                                <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 7L0.00480913 0.25L12.9952 0.25L6.5 7Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <ul class="nav-list flex-column">
+                                <li>
+                                    <a href="#" class="active">[Модульные дома]</a>
+                                </li>
+                                <li>
+                                    <a href="#">Каркасные дома</a>
+                                </li>
+                                <li>
+                                    <a href="#">Садовые домики</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бани</a>
+                                </li>
+                                <li>
+                                    <a href="#">Беседки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бытовки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Хозяйственные постройки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">/о компании</a>
+                        </li>
+                        <li>
+                            <a href="#">/Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#">/контакты</a>
+                        </li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul class="address d-flex flex-column">
+                        <li>
+                            <p>ООО «МОДУЛИС»</p>
+                            <p>ИНН: 664604291587</p>
+                            <p>ОГРН: 320665800112549</p>
+                        </li>
+                        <li>
+                            Режим работы:  <br>
+                            Пн-Пт с 09:00 до 18:00
+                        </li>
+                        <li>г. Калининград, ул. Семеновская, 21, стр. А</li>
+                    </ul>
+                    <ul class="link-network d-flex">
+                        <li>
+                            <a href="#" class="btn_light">
+                                <span class="icon">
+                                    <img src="./images/arrow-right-top.svg" alt="">
+                                </span>
+                                <span>Telegram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn_light">
+                                <span class="icon">
+                                    <img src="./images/arrow-right-top.svg" alt="">
+                                </span>
+                                <span>WhatsApp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile menu end -->
+
+        <!-- Contact us modal -->
+        <section class="main-modal position-fixed top-0 start-0 w-100 h-100 d-none align-items-center justify-content-center">
+            <div class="main-modal-bg position-absolute top-0 start-0 w-100 h-100"></div>
+            <div class="main-modal-content position position-relative bg-white">
+                <button class="main-modal-close position-absolute">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2>Свяжитесь с нами!</h2>
+                <p class="description">Оставьте заявку, мы свяжемся с вами в течение 15 минут. Наш специалист проконсультирует вас и предложит решение под ваш запрос.</p>
+                <div class="form-inp-wrap d-flex flex-column">
+                    <input type="text" placeholder="Ваше имя" class="form-inp">
+                    <input type="tel" name="" placeholder="Номер телефона" id="" class="form-inp">
+                    <input type="email" name="" placeholder="E-mail" id="" class="form-inp">
+                    <textarea name="" id="" placeholder="Комментарий"></textarea>
+                </div>
+                <button class="btn_more">
+                    <span class="icon">
+                        <img src="./images/arrow-right-top.svg" alt="">
+                    </span>
+                    <span>Отправить заявку</span>
+                </button>
+                <p>Продолжая, вы даете свое согласие на <a href="#">обработку Ваших персональных данных</a> и принимаете условия <a href="#">Пользовательского соглашения</a>.</p>
+            </div>
+        </section>
+        <!-- Contact us modal end -->
         
         <main>
             
             <!-- Home -->
             <section class="home">
-                <img src="./images/home-bg.png" alt="" class="home-bg">
+                <img src="./images/home-bg.png" alt="" class="home-bg d-none d-sm-block">
+                <img src="./images/home-bg-sm.png" alt="" class="home-bg d-sm-none">
                 <div class="container">
                     <div class="position-relative">
                         <h1><span>МОДУЛЬНЫЕ</span> ДОМА</h1>
-                        <ul>
+                        <ul class="d-flex flex-column">
                             <li>[ОТ 30М2]</li>
                             <li>[ЗА 2 МЕСЯЦА]</li>
                             <li>[ПОД КЛЮЧ]</li>
                         </ul>
                     </div>
-                    <div class="d-flex align-items-center text-wrap">
+                    <div class="d-flex align-items-center align-items-sm-start align-lg-items-center text-wrap flex-column flex-lg-row">
                         <p>Идеальное решение для тех, кто хочет быстро и без лишних хлопот обзавестись собственным жильём. Мы предлагаем широкий выбор готовых проектов, которые можно адаптировать под индивидуальные потребности и предпочтения...</p>
-                        <a href="#" class="btn_white">
+                        <a href="#" class="btn_white main-modal-open">
                             <span class="icon">
                                 <img src="./images/plus-light.svg" alt="">
                             </span>
@@ -79,7 +235,7 @@
             <!-- Services -->
             <section class="service">
                 <div class="container">
-                    <div class="sec-head d-flex align-items-start">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
                         <h4>[ПОСТРОИМ]</h4>
                         <div class="sec-head-right">
                             <h2 class="sec-title">
@@ -161,7 +317,7 @@
             <!-- Company -->
             <section class="company">
                 <div class="container">
-                    <div class="sec-head d-flex align-items-start">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
                         <h4>[КРАТКО О НАС]</h4>
                         <div class="sec-head-right">
                             <h2 class="sec-title">
@@ -189,8 +345,7 @@
                         </div>
                         <div class="swp-pagination-wrap">
                             <div class="swp-bullet">
-                                <b>1</b>
-                                <span>-5</span>
+                                <b>1</b><span>-5</span>
                             </div>
                             <div class="swp-pagination"></div>
                         </div>
@@ -262,15 +417,1238 @@
                 </div>
             </section>
             <!-- Company end -->
+
+            <!-- Project -->
+            <section class="project">
+                <div class="container">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[ТИПОВЫЕ ПРОЕКТЫ]</h4>
+                        <div class="sec-head-right">
+                            <h2 class="sec-title">
+                                <span>ГОТОВЫЕ</span> ПРОЕКТЫ<span class="dots">.</span>
+                            </h2>
+                            <p>...идеальное решение для вас и вашей семьи в Калининграде и Калининградской области, учтем все ваши пожелания и требования. Выбирайте уже готовые решения, а также записывайтесь на консультацию с нашими архитекторами и вместе мы разработаем для вас индивидуальный проект!</p>
+                        </div>
+                    </div>
+                    <ul class="tab_head" id="pills-tab" role="tablist">
+                        <li role="presentation">
+                            <button class="active" id="tab-btn-1" data-bs-toggle="pill" data-bs-target="#tab-body-1" type="button" role="tab" aria-controls="tab-body-1" aria-selected="true">Каркасные дома</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab-btn-2" data-bs-toggle="pill" data-bs-target="#tab-body-2" type="button" role="tab" aria-controls="tab-body-2" aria-selected="false">Модульные дома</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab-btn-3" data-bs-toggle="pill" data-bs-target="#tab-body-3" type="button" role="tab" aria-controls="tab-body-3" aria-selected="false">Садовые домики</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab-btn-4" data-bs-toggle="pill" data-bs-target="#tab-body-4" type="button" role="tab" aria-controls="tab-body-4" aria-selected="false">Бытовки</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab-btn-5" data-bs-toggle="pill" data-bs-target="#tab-body-5" type="button" role="tab" aria-controls="tab-body-5" aria-selected="false">Хоз. постройки</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab-btn-6" data-bs-toggle="pill" data-bs-target="#tab-body-6" type="button" role="tab" aria-controls="tab-body-6" aria-selected="false">Бани</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="tab-body-1" role="tabpanel" aria-labelledby="tab-btn-1" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-body-2" role="tabpanel" aria-labelledby="tab-btn-2" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-body-3" role="tabpanel" aria-labelledby="tab-btn-3" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-body-4" role="tabpanel" aria-labelledby="tab-btn-4" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-body-5" role="tabpanel" aria-labelledby="tab-btn-5" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-body-6" role="tabpanel" aria-labelledby="tab-btn-6" tabindex="0">
+                            <div class="project-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-1.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">РИГЕЛЬ</span>
+                                                        <span class="size">[68м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-2.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АЛЬТАИР</span>
+                                                        <span class="size">[20м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-3.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">АНТАРЕС</span>
+                                                        <span class="size">[56м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project-card">
+                                                <img src="./images/project-card-4.png" alt="" class="main-img">
+                                                <a href="#">
+                                                    <span>
+                                                        <span class="name">ХАМАЛЬ</span>
+                                                        <span class="size">[175м2]</span>
+                                                    </span>
+                                                    <img src="./images/arrow-right-top-black.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project end -->
+
+            <!-- Best -->
+            <section class="best">
+                <div class="container">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[преимущества]</h4>
+                        <div class="sec-head-right">
+                            <h2 class="sec-title">
+                                <span>почему</span> мы лучшие<span class="dots">?</span>
+                            </h2>
+                            <p>Мы рады предложить вам взаимовыгодное сотрудничество в сфере строительства. Наша компания специализируется на предоставлении качественных услуг в области возведения зданий и сооружений, а также выполнения ремонтных работ любой сложности.</p>
+                        </div>
+                    </div>
+                    <div class="best-card-wrap">
+                        <div class="best-card first">
+                            <img src="./images/best-card-icon-1.svg" alt="">
+                            <h3>Гарантии и страхование</h3>
+                            <p>Компания имеет опыт работы в строительной отрасли и обладает квалифицированными специалистами, что гарантирует высокое качество работ.</p>
+                        </div>
+                        <div class="empty-card"></div>
+                        <div class="best-card">
+                            <img src="./images/best-card-icon-2.svg" alt="">
+                            <h3>Опыт и профессионализм</h3>
+                            <p>Компания стремится выполнять проекты в установленные сроки, чтобы клиенты могли планировать свои инвестиции и получать выгоду от своих вложений.</p>
+                        </div>
+                        <div class="best-card">
+                            <img src="./images/best-card-icon-3.svg" alt="">
+                            <h3>Соблюдение сроков</h3>
+                            <p>Компания предоставляет гарантии на выполненные работы и предлагает страхование ответственности, что защищает интересы клиентов в случае возникновения проблем.</p>
+                        </div>
+                        <div class="best-card">
+                            <img src="./images/best-card-icon-4.svg" alt="">
+                            <h3>Поддержка клиентов</h3>
+                            <p>Компания уделяет особое внимание контролю качества выполняемых работ, чтобы обеспечить долговечность и надёжность построенных объектов.</p>
+                        </div>
+                        <div class="best-card">
+                            <img src="./images/best-card-icon-5.svg" alt="">
+                            <h3>Контроль качества</h3>
+                            <p>Строительная компания стремится использовать экологически чистые материалы и технологии, минимизируя воздействие на окружающую среду.</p>
+                        </div>
+                        <div class="empty-card"></div>
+                        <div class="best-card last">
+                            <img src="./images/best-card-icon-6.svg" alt="">
+                            <h3>Экологичность</h3>
+                            <p>Компания активно взаимодействует с клиентами на всех этапах сотрудничества, предоставляя информацию о ходе работ и оперативно решая возникающие вопросы.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Best end -->
+
+            <!-- Work -->
+            <section class="work">
+                <div class="container">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[ПОРТФОЛИО]</h4>
+                        <div class="sec-head-right">
+                            <h2 class="sec-title">
+                                <span>наши</span> работы<span class="dots">.</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-card-item">
+                            <div class="work-card-text d-flex align-items-start flex-column flex-lg-row">
+                                <div class="work-card-text-left">
+                                    <a href="#">
+                                        <span>Подробнее</span>
+                                        <img src="./images/arrow-right-top-black.svg" alt="">
+                                    </a>
+                                </div>
+                                <ul class="work-card-text-right d-flex align-items-start flex-wrap flex-lg-nowrap">
+                                    <li>
+                                        <h4>БЕТЕЛЬГЕЙЗЕ</h4>
+                                        <p>Реализация проекта под ключ включали: заливку фундамента, возведение стен, кровлю крыши, внутреннюю и внешнюю отделку дома с учетом желаний клиента. Сложные монтажные работы, дизайнерские проекты и счастливые заказчики...</p>
+                                    </li>
+                                    <li>
+                                        <h4>[3]</h4>
+                                        <p>Месяца работы</p>
+                                    </li>
+                                    <li>
+                                        <h4>[120м2]</h4>
+                                        <p>Площадь дома</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="work-card-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-1-1.png" alt="">
+                                            <img src="./images/work-card-1-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-1-1.png" alt="">
+                                            <img src="./images/work-card-1-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-1-1.png" alt="">
+                                            <img src="./images/work-card-1-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-card-item">
+                            <div class="work-card-text d-flex align-items-start flex-column flex-lg-row">
+                                <div class="work-card-text-left">
+                                    <a href="#">
+                                        <span>Подробнее</span>
+                                        <img src="./images/arrow-right-top-black.svg" alt="">
+                                    </a>
+                                </div>
+                                <ul class="work-card-text-right d-flex align-items-start flex-wrap flex-lg-nowrap">
+                                    <li>
+                                        <h4>РИГЕЛЬ</h4>
+                                        <p>Реализация проекта под ключ включали: установку модульного дома на участок, внутреннюю и внешнюю отделку дома с учетом желаний клиента. Сложные монтажные работы, дизайнерские проекты и счастливые заказчики...</p>
+                                    </li>
+                                    <li>
+                                        <h4>[2]</h4>
+                                        <p>Месяца работы</p>
+                                    </li>
+                                    <li>
+                                        <h4>[68м2]</h4>
+                                        <p>Площадь дома</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="work-card-swp">
+                                <div class="swp-btn">
+                                    <button class="swp-btn-prev">
+                                        <img src="./images/arrow-left.svg" alt="">
+                                    </button>
+                                    <button class="swp-btn-next">
+                                        <img src="./images/arrow-right.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-2-1.png" alt="">
+                                            <img src="./images/work-card-2-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-2-1.png" alt="">
+                                            <img src="./images/work-card-2-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/work-card-2-1.png" alt="">
+                                            <img src="./images/work-card-2-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_more">
+                        <span class="icon">
+                            <img src="./images/arrow-right-top.svg" alt="">
+                        </span>
+                        <span>Смотреть все проекты</span>
+                    </a>
+                </div>
+            </section>
+            <!-- Work end -->
+
+            <!-- Review -->
+            <section class="review">
+                <div class="container">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[впечатления]</h4>
+                        <div class="sec-head-right">
+                            <h2 class="sec-title">
+                                <span>ОТЗЫВЫ</span> НАШИХ КЛИЕНТОВ<span class="dots">.</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="review-swp">
+                        <div class="swp-btn">
+                            <button class="swp-btn-prev">
+                                <img src="./images/arrow-left-blac.svg" alt="">
+                            </button>
+                            <button class="swp-btn-next">
+                                <img src="./images/arrow-right-blac.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card">
+                                        <div class="review-card-head">
+                                            <h3>Валентина Ф.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[21.10.24]</h5>
+                                        </div>
+                                        <p>Спасибо за строительство нашего дома! <br>Если вы в поисках строительной компании, то ПУСК-39 компетентны в вопросах строительства на все 100.Легко доверили им подбор и закупку всех материалов! К качеству и исполнению претензий нет.Сроки не нарушили и это очень порадовало,потому что это основная проблема при работе со строительными бригадами.Советую обращаться к ним!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_gray">
+                                        <div class="review-card-head">
+                                            <h3>Ольга К.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[01.10.24]</h5>
+                                        </div>
+                                        <p>Заказывали в компании каркасный дом. Строят на совесть. Каждый проект- индивидуальный. Любое ваше пожелание будет учтено и направлено в нужное русло. Если просите глупость- объяснят аргументированно почему не стоит так делать. За короткий промежуток времени визуализируют на компьютере вашу идею и вы сможете своими глазами увидеть как это будет смотреться и что не стоит делать. Результатом очень довольны. Качественно. Быстро. Доступно. <br> Однозначно рекомендую компанию всем!!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-card bg_dark">
+                                        <div class="review-card-head">
+                                            <h3>Журбенко В.</h3>
+                                            <h4>г. Калининград</h4>
+                                            <h5>[13.09.24]</h5>
+                                        </div>
+                                        <p>Качественно и быстро и что главное не дорого строят. Команда профессионалов, купили у них баньку, уже третий год пользуемся, собираемся всей семьёй попариться. Море положительных эмоций. Нам повезло с выбором производителя. Могу порекомендовать!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-swp-navigation">
+                        <div class="swp-custom-pagination">
+                            <b>1</b><span>-42</span>
+                        </div>
+                        <div class="swp-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
             
         </main>
         
         <!-- Footer -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer-top">
+                <img src="./images/footer-bg.png" alt="" class="bg-img">
+                <div class="container">
+                    <h2>Не знаете с чего начать? <br>Запишитесь на консультацию</h2>
+                    <p>Оставьте заявку, мы свяжемся с вами в течение 15 минут. Наш специалист проконсультирует вас и предложит решение под ваш запрос.</p>
+                    <a href="#" class="btn_light main-modal-open">
+                        <span class="icon">
+                            <img src="./images/plus-light.svg" alt="">
+                        </span>
+                        <span>Оставить заявку</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="container">
+                    <div class="footer-body d-flex align-items-stretch flex-column-reverse flex-lg-row">
+                        <div class="footer-contact d-flex flex-column align-items-start justify-content-between">
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="mailto:info@modulis.ru" class="link_mail">info@modulis.ru</a>
+                                <a href="tel:+7 (921) 341-88-87" class="link_phone">+7 (921) 341-88-87</a>
+                            </div>
+                            <ul class="d-flex">
+                                <li>
+                                    <a href="#" class="btn_light">
+                                        <span class="icon">
+                                            <img src="./images/arrow-right-top.svg" alt="">
+                                        </span>
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_light">
+                                        <span class="icon">
+                                            <img src="./images/arrow-right-top.svg" alt="">
+                                        </span>
+                                        <span>WhatsApp</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-navs d-flex align-items-start justify-content-between flex-column flex-md-row">
+                            <div class="footer-navs-item">
+                                <h3>
+                                    <span>О КОМПАНИИ</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 7L0.00480913 0.25L12.9952 0.25L6.5 7Z" fill="white"/>
+                                    </svg>
+                                </h3>
+                                <ul class="d-flex flex-column align-items-start">
+                                    <li>
+                                        <p>ООО «МОДУЛИС»</p>
+                                        <p>ИНН: 664604291587</p>
+                                        <p>ОГРН: 320665800112549</p>
+                                    </li>
+                                    <li>
+                                        <p>Режим работы: <br> Пн-Пт с 09:00 до 18:00</p>
+                                    </li>
+                                    <li>
+                                        <p>г. Калининград, ул. <br> Семеновская, 21, стр. А</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-navs-item">
+                                <h3>
+                                    <span>ПОСТРОИМ</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 7L0.00480913 0.25L12.9952 0.25L6.5 7Z" fill="white"/>
+                                    </svg>
+                                </h3>
+                                <ul class="d-flex flex-column align-items-start">
+                                    <li>
+                                        <a href="#">Каркасные дома</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Модульные дома</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Садовые домики</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Бани</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Беседки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Хоз. постройки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-navs-item">
+                                <h3>
+                                    <span>МЕНЮ</span>
+                                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 7L0.00480913 0.25L12.9952 0.25L6.5 7Z" fill="white"/>
+                                    </svg>
+                                </h3>
+                                <ul class="d-flex flex-column align-items-start">
+                                    <li>
+                                        <a href="#">О Компании</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Портфолио</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ипотека</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
+                        <p>ООО «MODULIS», © Все права защищены, 2016-2024</p>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <h3>РАЗРАБОТКА AIMART</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Footer end -->
         
     </div>
     
+    <!-- iMask JS -->
+    <script src="./js/imask.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
