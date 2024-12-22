@@ -126,7 +126,7 @@ const reviewSwp = new Swiper('.review-swp .swiper', {
     },
     breakpoints: {
         991: {
-            slidePrev: 3,
+            slidesPerView: 3,
             spaceBetween: 20,
         }
     }
