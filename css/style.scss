@@ -1922,3 +1922,152 @@ body {
         }
     }
 }
+
+// Portfolio
+.portfolio {
+    margin-bottom: 100px;
+
+    .sec-title {
+        margin-bottom: 0;
+    }
+
+    .row {
+        --bs-gutter-x: 20px;
+        row-gap: 20px;
+        
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-card {
+        border: 1px solid $color-text-black;
+        border-radius: 30px;
+        padding: 30px;
+        gap: 60px;
+        height: 100%;
+
+        @include media(991) {
+            border-radius: 20px;
+            padding: 30px 20px;
+            gap: 40px;
+        }
+
+        a:not(.btn_more) {
+            display: inline-flex;
+        }
+
+        h3 {
+            font-size: 30px;
+            line-height: 21px;
+
+            @include media(991) {
+                font-size: 20px;
+                line-height: 14px;
+            }
+        }
+
+        .price {
+            font-size: 20px;
+            color: $color-orange;
+            line-height: 14px;
+
+            @include media(991) {
+                font-size: 16px;
+                line-height: 11px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 160%;
+            font-family: $font-montserrat;
+        }
+
+        ul {
+            gap: 20px;
+
+            li {
+                gap: 10px;
+
+                @include media(991) {
+                    gap: 5px;
+                }
+            }
+
+            img {
+                flex-shrink: 0;
+
+                @include media(991) {
+                    height: 23px;
+                }
+            }
+
+            span {
+                font-family: $font-montserrat;
+                font-size: 14px;
+                line-height: 160%;
+                color: $color-text-dark-gray;
+                line-height: 10px;
+            }
+        }
+    }
+
+    &-swp {
+        height: 100%;
+        position: relative;
+
+        .swp-btn {
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+
+            &-prev {
+                left: 40px;
+                
+                @include media(991) {
+                    left: 20px;
+                }
+            }
+
+            &-next {
+                right: 40px;
+                
+                @include media(991) {
+                    right: 20px;
+                }
+            }
+        }
+
+        .swiper {
+            height: 100%;
+            border-radius: 30px;
+
+            @include media(991) {
+                border-radius: 20px;
+            }
+
+            &-slide {
+                height: 100%;
+
+                @include media(991) {
+                    height: 365px;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        margin-top: 100px;
+    }
+}
+// Portfolio end

@@ -63,7 +63,7 @@ companySwpChild.on('slideChange', function (e) {
 const companySwpPrev = document.querySelector('.company-swp .swp-btn-prev');
 const companySwpNext = document.querySelector('.company-swp .swp-btn-next');
 
-if (companySwpChild) {
+if (companySwpChild && companySwpPrev) {
     companySwpPrev.onclick = () => {
         companySwpChild.slidePrev();
         companySwpParent.slidePrev();
@@ -134,7 +134,7 @@ const reviewSwp = new Swiper('.review-swp .swiper', {
 
 const revewCusomNavigation = document.querySelector('.review-swp-navigation .swp-custom-pagination');
 
-if (reviewSwp) {
+if (reviewSwp && revewCusomNavigation) {
     revewCusomNavigation.querySelector('span').textContent = '-' + reviewSwp.slides.length;
 
     reviewSwp.on('slideChange', function (e) {
@@ -180,4 +180,19 @@ mobileMenuOpen.onclick = () => {
 mobileMenuClose.onclick = () => {
     mobileMenu.classList.remove('d-block');
     bodyVisible();
+}
+
+const portfolioSwp = document.querySelectorAll('.portfolio-swp');
+if (portfolioSwp.length) {
+    portfolioSwp.forEach(el => {
+        const swp = new Swiper(el.querySelector('.swiper'), {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: el.querySelector('.swp-btn-next'),
+                prevEl: el.querySelector('.swp-btn-prev'),
+            }
+        })
+    })
 }
