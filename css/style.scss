@@ -1837,7 +1837,7 @@ body {
         margin-bottom: 100px;
 
         @include media(991) {
-            gap: 40px;
+            row-gap: 40px;
             margin-bottom: 60px;
         }
     }

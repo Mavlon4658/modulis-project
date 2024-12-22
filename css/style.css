@@ -1748,7 +1748,7 @@ body {
 }
 @media screen and (max-width: 991px) {
   .catalog .row {
-    gap: 40px;
+    row-gap: 40px;
     margin-bottom: 60px;
   }
 }
