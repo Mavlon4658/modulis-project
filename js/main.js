@@ -206,3 +206,21 @@ const visualizationSwp = new Swiper('.visualization .swiper', {
         prevEl: '.visualization-swp .swp-btn-prev',
     }
 });
+
+const houseChildSwp = new Swiper('.house-child', {
+    slidesPerView: 5,
+    spaceBetween: 20,
+})
+
+const houseParentSwp = new Swiper('.house-parent', {
+    slidesPerView: 1,
+    effect: 'fade',
+    loop: true,
+    navigation: {
+        nextEl: '.house .swp-btn-next',
+        prevEl: '.house .swp-btn-prev',
+    },
+    thumbs: {
+        swiper: houseChildSwp,
+    },
+});

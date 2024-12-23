@@ -2366,11 +2366,82 @@ body {
 .stage {
     background: $color-text-black;
     color: $color-bg-white;
+    padding-bottom: 100px;
 
     .sec-head {
         h4 {
             color: $color-orange;
         }
     }
+
+    .row {
+        --bs-gutter-x: 20px;
+        row-gap: 20px;
+
+        img {
+            width: 100%;
+            height: 325px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+    }
 }
 // Stage end
+
+// House
+.house {
+    position: relative;
+    
+    .container {
+        position: relative;
+    }
+
+    .swp-btn {
+        button {
+            position: absolute;
+            top: 390px;
+            z-index: 2;
+        }
+
+        &-prev {
+            left: 40px;
+        }
+
+        &-next {
+            right: 40px;
+        }
+    }
+
+    &-parent {
+        img {
+            width: 100%;
+            height: 830px;
+            object-fit: cover;
+        }
+    }
+
+    &-child {
+        position: absolute;
+        max-width: calc(100% - 80px);
+        left: 40px;
+        bottom: 40px;
+
+        @include media(-1920) {
+            max-width: 1840px;
+            width: 1840px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .swiper-slide {
+            cursor: pointer;
+        }
+
+        img {
+            height: 130px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+// House end
