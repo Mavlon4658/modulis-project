@@ -19,7 +19,7 @@
     <div class="wrapper">
         
         <!-- Header -->
-        <header class="header fixed">
+        <header class="header">
             <div class="container d-flex align-items-center justify-content-between">
                 <a href="/" class="header-logo">MODULIS</a>
                 <ul>
@@ -206,52 +206,62 @@
         
         <main>
             
-            <!-- Mian breadcumb -->
-            <section class="main-breadcrumb">
-                <div class="container">
-                    <ul class="d-flex align-items-center flex-wrap">
-                        <li>
-                            <a href="/">Главная</a>
-                        </li>
-                        <li>
-                            <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4L0.25 7.4641L0.25 0.535898L4 4Z" fill="#373737"/>
-                            </svg>
-                        </li>
-                        <li>
-                            <a href="/portfolio.html">Каркасные дома</a>
-                        </li>
-                        <li>
-                            <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4L0.25 7.4641L0.25 0.535898L4 4Z" fill="#373737"/>
-                            </svg>
-                        </li>
-                        <li>Ригель</li>
-                    </ul>
+            <!-- Catalog home -->
+            <section class="catalog-home">
+                <img src="./images/catalog-home-card.png" alt="" class="bg-img">
+                <div class="container d-flex align-items-start align-items-lg-end justify-content-lg-between flex-column-reverse flex-lg-row">
+                    <div class="d-flex align-items-start align-items-lg-end flex-column flex-lg-row catalog-home-content">
+                        <div>
+                            <h2>антарес</h2>
+                            <p>Это проект 2024 года. В доме были проведены и подключены коммуникации, установлен фундамент, произведена доставка, монтаж и подключение к электричеству. Дом готов к проживанию!</p>
+                        </div>
+                        <a href="#" class="btn_white">
+                            <span class="icon">
+                                <img src="./images/plus-light.svg" alt="">
+                            </span>
+                            <span>Заказать такой дом</span>
+                        </a>
+                    </div>
+                    <h3>56м2</h3>
                 </div>
             </section>
-            <!-- Mian breadcumb end -->
+            <!-- Catalog home end -->
 
-            <!-- Rigel -->
-            <section class="rigel">
+            <!-- Technical -->
+            <section class="technical">
                 <div class="container">
-                    <div class="sec-head d-flex align-items-start flex-column-reverse flex-lg-row">
-                        <h4>
-                            <a href="#" class="btn_more">
-                                <span class="icon">
-                                    <img src="./images/arrow-right-top.svg" alt="">
-                                </span>
-                                <span>Заказать такой проект</span>
-                            </a>
-                        </h4>
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[запрос клиента]</h4>
                         <div class="sec-head-right">
                             <h2 class="sec-title">
-                                РИГЕЛЬ<span class="dots">.</span>
+                                <span>Техническое</span> задание<span class="dots">.</span>
                             </h2>
-                            <p>Реализация проекта под ключ включали: установку модульного дома на участок, внутреннюю и внешнюю отделку дома с учетом желаний клиента. Сложные монтажные работы, дизайнерские проекты и счастливые заказчики...</p>
+                            <ul class="d-flex flex-column">
+                                <li>
+                                    <p>С другой стороны, убеждённость некоторых оппонентов играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. В частности, граница обучения кадров требует анализа экономической целесообразности принимаемых решений. Предварительные выводы неутешительны: сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании инновационных методов управления процессами.</p>
+                                </li>
+                                <li>
+                                    <p>Каждый из нас понимает очевидную вещь: внедрение современных методик является качественно новой ступенью глубокомысленных рассуждений. Ясность нашей позиции очевидна: существующая теория говорит о возможностях первоочередных требований. Сложно сказать, почему диаграммы связей заблокированы в рамках своих собственных рациональных ограничений. Равным образом, социально-экономическое развитие обеспечивает актуальность как самодостаточных, так и внешне зависимых концептуальных решений. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности играет важную роль в формировании поставленных обществом задач. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада способствует повышению качества поставленных обществом задач.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="work-card-swp">
+                </div>
+            </section>
+            <!-- Technical end -->
+
+            <!-- Visualization -->
+            <section class="visualization">
+                <div class="container">
+                    <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
+                        <h4>[проект]</h4>
+                        <div class="sec-head-right">
+                            <h2 class="sec-title">
+                                визуализация<span class="dots">.</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="visualization-swp">
                         <div class="swp-btn">
                             <button class="swp-btn-prev">
                                 <img src="./images/arrow-left.svg" alt="">
@@ -263,67 +273,41 @@
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./images/work-card-2-1.png" alt="">
-                                    <img src="./images/work-card-2-2.png" alt="">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="./images/visualization-card-1.png" alt="">
+                                        </div>
+                                        <div class="d-none d-lg-flex col-8">
+                                            <img src="./images/visualization-card-2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/work-card-2-1.png" alt="">
-                                    <img src="./images/work-card-2-2.png" alt="">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="./images/visualization-card-1.png" alt="">
+                                        </div>
+                                        <div class="d-none d-lg-flex col-8">
+                                            <img src="./images/visualization-card-2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/work-card-2-1.png" alt="">
-                                    <img src="./images/work-card-2-2.png" alt="">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="./images/visualization-card-1.png" alt="">
+                                        </div>
+                                        <div class="d-none d-lg-flex col-8">
+                                            <img src="./images/visualization-card-2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <ul class="d-flex flex-wrap align-items-start">
-                        <li class="order-3 order-lg-1">
-                            <h3>[68м2]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-1.svg" alt="">
-                                <p>Площадь дома</p>
-                            </div>
-                        </li>
-                        <li class="order-3 order-lg-1">
-                            <h3>[2]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-2.svg" alt="">
-                                <p>Этажа</p>
-                            </div>
-                        </li>
-                        <li class="order-3 order-lg-1">
-                            <h3>[2]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-3.svg" alt="">
-                                <p>Спальни</p>
-                            </div>
-                        </li>
-                        <li class="order-3 order-lg-1">
-                            <h3>[1]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-4.svg" alt="">
-                                <p>Санузел</p>
-                            </div>
-                        </li>
-                        <li class="order-2 order-lg-1">
-                            <h3>[2-3 месяца]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-5.svg" alt="">
-                                <p>Срок строительства</p>
-                            </div>
-                        </li>
-                        <li class="order-1 order-lg-1">
-                            <h3 class="text-orange">[от 3 500 000₽]</h3>
-                            <div class="d-flex align-items-center">
-                                <img src="./images/rigel-icon-6.svg" alt="">
-                                <p>Цена строительства</p>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </section>
-            <!-- Rigel end -->
+            <!-- Visualization end -->
 
             <!-- Scheme -->
             <section class="scheme">
@@ -342,7 +326,7 @@
                             <div class="scheme-card">
                                 <h3>Первый этаж</h3>
                                 <div class="main-img">
-                                    <img src="./images/scheme-card-3.png" alt="">
+                                    <img src="./images/scheme-card-1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -350,7 +334,7 @@
                             <div class="scheme-card">
                                 <h3>Второй этаж</h3>
                                 <div class="main-img">
-                                    <img src="./images/scheme-card-4.png" alt="">
+                                    <img src="./images/scheme-card-2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -359,203 +343,128 @@
             </section>
             <!-- Scheme end -->
 
-            <!-- System -->
-            <section class="system">
+            <!-- Stage -->
+            <section class="stage">
                 <div class="container">
                     <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
-                        <h4>[конструктив]</h4>
+                        <h4>[ход стройки]</h4>
                         <div class="sec-head-right">
                             <h2 class="sec-title">
-                                <span>Система</span> дома<span class="dots">.</span>
+                                <span>Этапы</span> строительства<span class="dots">.</span>
                             </h2>
                             <p>...идеальное решение для вас и вашей семьи в Калининграде и Калининградской области, учтем все ваши пожелания и требования. Выбирайте уже готовые решения, а также записывайтесь на консультацию с нашими архитекторами и вместе мы разработаем для вас индивидуальный проект!</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="system-card">
-                                <div class="main-img">
-                                    <img src="./images/system-card-1.png" alt="">
-                                </div>
-                                <h3>Фундамент</h3>
-                                <p>Фундамент выполнен из свай. Поверх свай устанавливается ростверк (обвязка) из пакета досок 200х150.</p>
-                            </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-1.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-2.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-3.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-4.png" alt="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <div class="system-card">
-                                <div class="main-img">
-                                    <img src="./images/system-card-2.png" alt="">
-                                </div>
-                                <h3>Цокольное перекрытие</h3>
-                                <p>Лаги выполнены из доски 200х50 и имеют шаг 640 мм (между лагами 590 мм) под стандартный утеплитель (600 мм). Под стенами установлены блок балки. Лаги выдерживают 400+ кг/м2.</p>
-                            </div>
+                            <img src="./images/stage-card-5.png" alt="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <div class="system-card">
-                                <div class="main-img">
-                                    <img src="./images/system-card-3.png" alt="">
-                                </div>
-                                <h3>Стены</h3>
-                                <p>Стены выполнены из доски 150х50 и имеют шаг 640 мм (590 мм между стойками). Для обеспечения пространственной жесткости используются укосины. Каркас выполнен по канадской технологии: ригели над проемами.</p>
-                            </div>
+                            <img src="./images/stage-card-6.png" alt="">
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="system-card">
-                                <div class="main-img">
-                                    <img src="./images/system-card-4.png" alt="">
-                                </div>
-                                <h3>Стропильная система</h3>
-                                <p>Стропила выполнены из доски 200х50 и имеют шаг 640 мм (590 мм межу стропилами). Стропила выдерживают 300+ кг/м2.</p>
-                            </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-7.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-8.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-9.png" alt="">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <img src="./images/stage-card-10.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- System end -->
+            <!-- Stage end -->
 
-            <!-- Similar project -->
-            <section class="similar">
+            <!-- House -->
+            <section class="house">
                 <div class="container">
                     <div class="sec-head d-flex align-items-start flex-column flex-lg-row">
-                        <h4>[ТИПОВЫЕ ПРОЕКТЫ]</h4>
+                        <h4>[завершение строительства]</h4>
                         <div class="sec-head-right">
                             <h2 class="sec-title">
-                                <span>ПОХОЖИЕ</span> ПРОЕКТЫ<span class="dots">.</span>
+                                <span>Готовый</span> дом<span class="dots">.</span>
                             </h2>
                             <p>...идеальное решение для вас и вашей семьи в Калининграде и Калининградской области, учтем все ваши пожелания и требования. Выбирайте уже готовые решения, а также записывайтесь на консультацию с нашими архитекторами и вместе мы разработаем для вас индивидуальный проект!</p>
                         </div>
                     </div>
-                    <div class="project-swp similar-swp">
-                        <div class="swp-btn">
-                            <button class="swp-btn-prev">
-                                <img src="./images/arrow-left.svg" alt="">
-                            </button>
-                            <button class="swp-btn-next">
-                                <img src="./images/arrow-right.svg" alt="">
-                            </button>
+                </div>
+                <div class="container">
+                    <div class="swp-btn">
+                        <button class="swp-btn-prev">
+                            <img src="./images/arrow-left.svg" alt="">
+                        </button>
+                        <button class="swp-btn-next">
+                            <img src="./images/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper house-parent">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-1.png" alt="">
                         </div>
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-1.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">РИГЕЛЬ</span>
-                                                <span class="size">[68м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-2.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">АЛЬТАИР</span>
-                                                <span class="size">[20м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-3.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">АНТАРЕС</span>
-                                                <span class="size">[56м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-4.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">ХАМАЛЬ</span>
-                                                <span class="size">[175м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-1.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">РИГЕЛЬ</span>
-                                                <span class="size">[68м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-2.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">АЛЬТАИР</span>
-                                                <span class="size">[20м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-3.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">АНТАРЕС</span>
-                                                <span class="size">[56м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-card">
-                                        <img src="./images/project-card-4.png" alt="" class="main-img">
-                                        <a href="#">
-                                            <span>
-                                                <span class="name">ХАМАЛЬ</span>
-                                                <span class="size">[175м2]</span>
-                                            </span>
-                                            <img src="./images/arrow-right-top-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper house-child">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/house-card-6.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Similar project end -->
+            <!-- House end -->
             
         </main>
         
         <!-- Footer -->
         <footer class="footer">
-            <div class="footer-top">
-                <img src="./images/footer-bg.png" alt="" class="bg-img">
-                <div class="container">
-                    <h2>Не знаете с чего начать? <br>Запишитесь на консультацию</h2>
-                    <p>Оставьте заявку, мы свяжемся с вами в течение 15 минут. Наш специалист проконсультирует вас и предложит решение под ваш запрос.</p>
-                    <a href="#" class="btn_light main-modal-open">
-                        <span class="icon">
-                            <img src="./images/plus-light.svg" alt="">
-                        </span>
-                        <span>Оставить заявку</span>
-                    </a>
-                </div>
-            </div>
             <div class="footer-content">
                 <div class="container">
                     <div class="footer-body d-flex align-items-stretch flex-column-reverse flex-lg-row">

@@ -97,7 +97,7 @@ if (projectCards.length) {
     })
 }
 
-const workcards = document.querySelectorAll('.work-card-item');
+const workcards = document.querySelectorAll('.work-card-swp');
 
 if (workcards.length) {
     workcards.forEach(el => {
