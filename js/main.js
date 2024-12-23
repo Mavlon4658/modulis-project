@@ -196,3 +196,13 @@ if (portfolioSwp.length) {
         })
     })
 }
+
+const visualizationSwp = new Swiper('.visualization .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        nextEl: '.visualization-swp .swp-btn-next',
+        prevEl: '.visualization-swp .swp-btn-prev',
+    }
+});

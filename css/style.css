@@ -670,6 +670,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #8E8E8E;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1240px) {
   .sec-head h4 {
@@ -2099,4 +2100,115 @@ body {
   .contact iframe {
     height: 301px;
   }
+}
+
+.catalog-home {
+  position: relative;
+  z-index: 1;
+  background: black;
+}
+.catalog-home .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+}
+.catalog-home .container {
+  height: 830px;
+  gap: 135px;
+  padding-bottom: 100px;
+}
+.catalog-home .container h2 {
+  font-size: 55px;
+  line-height: 38px;
+  color: #DB761E;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.catalog-home .container p {
+  max-width: 560px;
+  color: #FFFFFF;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  line-height: 160%;
+  text-indent: 50px;
+}
+
+.technical .sec-head ul {
+  gap: 22px;
+}
+.technical .sec-head p {
+  text-indent: 0px;
+}
+
+.visualization {
+  margin-bottom: 100px;
+}
+.visualization .sec-head {
+  padding-top: 0;
+}
+.visualization .sec-title {
+  margin-bottom: 0 !important;
+}
+.visualization-swp {
+  position: relative;
+}
+.visualization-swp .row {
+  --bs-gutter-x: 20px;
+}
+.visualization-swp .swp-btn button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.visualization-swp .swp-btn-prev {
+  left: 40px;
+}
+.visualization-swp .swp-btn-next {
+  right: 40px;
+}
+.visualization-swp .swiper img {
+  height: 470px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.scheme {
+  background: #F5F5F5;
+  padding-bottom: 100px;
+}
+.scheme .row {
+  --bs-gutter-x: 20px;
+}
+.scheme-card h3 {
+  font-size: 20px;
+  line-height: 14px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.scheme-card .main-img {
+  border-radius: 30px;
+  background: #FFFFFF;
+  height: 470px;
+  padding: 20px;
+}
+.scheme-card .main-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stage {
+  background: #373737;
+  color: #FFFFFF;
+}
+.stage .sec-head h4 {
+  color: #DB761E;
 }/*# sourceMappingURL=style.css.map */
