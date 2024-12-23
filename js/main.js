@@ -208,8 +208,14 @@ const visualizationSwp = new Swiper('.visualization .swiper', {
 });
 
 const houseChildSwp = new Swiper('.house-child', {
-    slidesPerView: 5,
-    spaceBetween: 20,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    breakpoints: {
+        767: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        }
+    }
 })
 
 const houseParentSwp = new Swiper('.house-parent', {

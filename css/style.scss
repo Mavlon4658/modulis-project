@@ -2245,24 +2245,58 @@ body {
 
     .container {
         height: 830px;
-        gap: 135px;
         padding-bottom: 100px;
-
-        h2 {
-            font-size: 55px;
-            line-height: 38px;
-            color: $color-orange;
-            margin-bottom: 40px;
-            text-transform: uppercase;
+        
+        @include media(991) {
+            height: 680px;
+            padding-bottom: 40px;
+            gap: 60px;
         }
+    }
+    
+    &-content {
+        gap: 135px;
+        
+        @include media(991) {
+            gap: 40px;
+        }
+    }
 
-        p {
-            max-width: 560px;
-            color: $color-bg-white;
-            font-family: $font-montserrat;
-            font-size: 14px;
-            line-height: 160%;
-            text-indent: 50px;
+    h2 {
+        font-size: 55px;
+        line-height: 38px;
+        color: $color-orange;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+
+        @include media(991) {
+            font-size: 40px;
+            line-height: 28px;
+        }
+    }
+
+    p {
+        max-width: 560px;
+        color: $color-bg-white;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        line-height: 160%;
+        text-indent: 50px;
+
+        @include media(991) {
+            font-size: 12px;
+            text-indent: 40px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 14px;
+        color: $color-bg-white;
+        opacity: 0.6;
+
+        @include media(991) {
+
         }
     }
 }
@@ -2285,6 +2319,10 @@ body {
 // Visualization
 .visualization {
     margin-bottom: 100px;
+
+    @include media(991) {
+        margin-bottom: 80px;
+    }
 
     .sec-head {
         padding-top: 0;
@@ -2323,6 +2361,12 @@ body {
                 height: 470px;
                 width: 100%;
                 border-radius: 30px;
+                object-fit: cover;
+
+                @include media(991) {
+                    height: 365px;
+                    border-radius: 20px;
+                }
             }
         }
     }
@@ -2333,9 +2377,14 @@ body {
 .scheme {
     background: $color-bg-grey;
     padding-bottom: 100px;
+
+    @include media(991) {
+        gap: 20px;
+    }
     
     .row {
         --bs-gutter-x: 20px;
+        row-gap: 40px;
     }
 
     &-card {
@@ -2344,6 +2393,12 @@ body {
             line-height: 14px;
             margin-bottom: 40px;
             text-transform: uppercase;
+
+            @include media(991) {
+                font-size: 16px;
+                line-height: 11px;
+                margin-bottom: 20px;
+            }
         }
 
         .main-img {
@@ -2351,6 +2406,12 @@ body {
             background: $color-bg-white;
             height: 470px;
             padding: 20px;
+
+            @include media(991) {
+                height: 320px;
+                border-radius: 20px;
+                overflow: hidden;
+            }
 
             img {
                 width: 100%;
@@ -2368,6 +2429,10 @@ body {
     color: $color-bg-white;
     padding-bottom: 100px;
 
+    @include media(991) {
+        padding-bottom: 80px;
+    }
+
     .sec-head {
         h4 {
             color: $color-orange;
@@ -2377,12 +2442,29 @@ body {
     .row {
         --bs-gutter-x: 20px;
         row-gap: 20px;
+        
+        @include media(991) {
+            --bs-gutter-x: 10px;
+        }
 
         img {
             width: 100%;
             height: 325px;
             object-fit: cover;
             border-radius: 30px;
+
+            @include media(991) {
+                height: 155px;
+                border-radius: 20px;
+            }
+        }
+
+        .col-12.col-lg-6 {
+            @include media(991) {
+                img {
+                    height: 190px !important;
+                }
+            }
         }
     }
 }
@@ -2401,14 +2483,26 @@ body {
             position: absolute;
             top: 390px;
             z-index: 2;
+
+            @include media(991) {
+                top: 313px;
+            }
         }
 
         &-prev {
             left: 40px;
+            
+            @include media(991) {
+                left: 20px;
+            }
         }
 
         &-next {
             right: 40px;
+            
+            @include media(991) {
+                right: 20px;
+            }
         }
     }
 
@@ -2417,6 +2511,10 @@ body {
             width: 100%;
             height: 830px;
             object-fit: cover;
+
+            @include media(991) {
+                height: 660px;
+            }
         }
     }
 
@@ -2433,6 +2531,11 @@ body {
             transform: translateX(-50%);
         }
 
+        @include media(991) {
+            left: 20px;
+            max-width: calc(100% - 40px);
+        }
+
         .swiper-slide {
             cursor: pointer;
         }
@@ -2441,6 +2544,10 @@ body {
             height: 130px;
             width: 100%;
             object-fit: cover;
+
+            @include media(991) {
+                height: 50px;
+            }
         }
     }
 }
