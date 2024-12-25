@@ -673,6 +673,11 @@ body {
                 line-height: 160%;
                 font-family: $font-montserrat;
                 text-indent: 50px;
+
+                a {
+                    color: $color-orange;
+                    display: inline;
+                }
             }
         }
     }
@@ -854,6 +859,31 @@ body {
             @include media(991) {
                 display: none !important;
             }
+        }
+    }
+
+    &-card {
+        margin-bottom: 100px;
+        gap: 60px;
+
+        @include media(991) {
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 55px;
+            line-height: 38px;
+            margin-bottom: 30px;
+
+            span {
+                color: $color-orange;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-family: $font-montserrat;
+            line-height: 160%;
         }
     }
 
@@ -2487,6 +2517,14 @@ body {
             @include media(991) {
                 top: 313px;
             }
+
+            &.black {
+                border-color: black;
+
+                img {
+                    filter: brightness(0) saturate(100%);
+                }
+            }
         }
 
         &-prev {
@@ -2681,6 +2719,125 @@ body {
 }
 // System end
 
+// Interactive
+.interactive {
+    background: $color-text-black;
+    color: $color-bg-white;
+    padding-bottom: 100px;
+
+    .sec-head {
+        h4 {
+            color: $color-orange;
+        }
+
+        &-right {
+            p {
+                text-indent: 0;
+            }
+        }
+    }
+
+    .row {
+        row-gap: 40px;
+    }
+
+    ul {
+        li {
+            &:not(:first-child) {
+                padding: 40px 0;
+                border-bottom: .2px solid #F5F5F5;
+
+                @include media(991) {
+                    padding: 20px 0 50px;
+                }
+            }
+
+            @include media(991) {
+                position: relative;
+            }
+        }
+        
+        h3, p {
+            width: calc(100% / 3);
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 14px;
+
+            @include media(991) {
+                width: 50%;
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            font-family: $font-montserrat;
+            font-size: 14px;
+            line-height: 160%;
+
+            @include media(991) {
+                width: 50%;
+
+                &:last-child {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 0;
+                    font-family: $font-stapel-medium;
+                }
+            }
+        }
+
+        .text-orange {
+            color: $color-orange;
+        }
+    }
+
+    .price {
+        @include media(-991) {
+            width: 209px;
+            position: sticky;
+            right: 0;
+            top: 150px;
+            margin: 0 0 0 auto;
+        }
+
+        @include media(991) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $color-orange;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+
+            @include media(991) {
+                width: 50%;
+                margin-bottom: 0;
+                font-size: 16px;
+                line-height: 11px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: $color-orange;
+
+            @include media(991) {
+                width: 50%;
+                line-height: 11px;
+            }
+        }
+    }
+}
+// Interactive end
+
 // Similar
 .similar {
     padding-bottom: 100px;
@@ -2733,3 +2890,240 @@ body {
     }
 }
 // Similar end
+
+// Team
+.team {
+    background: $color-bg-grey;
+    padding-bottom: 100px;
+    margin-top: 100px;
+
+    @include media(991) {
+        padding-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .sec-head-right {
+        p {
+            text-indent: 0;
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 20px;
+        row-gap: 40px;
+        
+        @include media(991) {
+            --bs-gutter-x: 10px;
+        }
+    }
+
+    &-card {
+        img {
+            height: 406px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+
+            @include media(991) {
+                border-radius: 15px;
+                height: 200px;
+                object-position: center top;
+            }
+        }
+
+        h4 {
+            margin: 30px 0 15px;
+            font-size: 20px;
+            line-height: 14px;
+            text-transform: uppercase;
+
+            @include media(991) {
+                font-size: 14px;
+                line-height: 10px;
+                display: none;
+            }
+
+            &.sm {
+                display: none;
+
+                @include media(991) {
+                    display: block;
+                }
+            }
+        }
+
+        p {
+            font-family: $font-montserrat;
+            font-size: 14px;
+            line-height: 10px;
+
+            @include media(991) {
+                font-size: 12px;
+                line-height: 160%;
+            }
+        }
+    }
+}
+// Team end
+
+// History
+.history {
+    background: $color-bg-grey;
+    padding-bottom: 118px;
+
+    @include media(991) {
+        padding-bottom: 59px;
+    }
+
+    .sec-title {
+        margin-bottom: 0;
+    }
+
+    .swiper {
+        height: 474px;
+        padding-bottom: 23.5px;
+
+        @include media(991) {
+            height: 690px;
+            padding-top: 5px;
+        }
+
+        &-slide.swiper-slide-active {
+            @include media(-991) {
+                h3 span {
+                    color: $color-orange;
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+
+    &-card {
+        display: flex;
+        padding-bottom: 46px;
+        border-bottom: 0.5px solid $color-text-dark-gray;
+
+        @include media(991) {
+            flex-direction: column;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        h3 {
+            width: 461px;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 30px;
+                color: $color-text-grey;
+
+                @include media(991) {
+                    position: static;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        p {
+            max-width: 266px;
+            font-size: 14px;
+            font-family: $font-montserrat;
+        }
+    }
+}
+// History end
+
+// Partner
+.partner {
+    background: $color-text-black;
+    color: $color-bg-white;
+    padding-bottom: 100px;
+
+    @include media(991) {
+        padding-bottom: 80px;
+    }
+
+    .sec-head {
+        h4 {
+            color: $color-orange;
+        }
+
+        &-right {
+            p {
+                text-indent: 0;
+                max-width: 785px;
+            }
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 20px;
+        row-gap: 20px;
+    }
+
+    &-card {
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 20%);
+        padding: 40px 30px;
+        height: 100%;
+
+        @include media(991) {
+            padding: 30px 20px;
+            border-radius: 20px;
+            min-height: 310px;
+        }
+
+        &.bg_transparent {
+            background: transparent;
+            border: 0.5px solid $color-bg-white;
+        }
+
+        &.bg_orange {
+            background: $color-orange;
+
+            .partner-card-head span {
+                color: $color-bg-white;
+            }
+        }
+
+        &-head {
+            margin-bottom: 80px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 14px;
+                text-transform: uppercase;
+
+                @include media(991) {
+                    font-size: 16px;
+                    line-height: 11px;
+                }
+            }
+
+            span {
+                color: $color-text-grey;
+                font-size: 14px;
+                line-height: 10px;
+
+                @include media(991) {
+                    font-size: 12px;
+                    line-height: 8px;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-family: $font-montserrat;
+            line-height: 160%;
+        }
+
+        a {
+            margin-top: 40px;
+        }
+    }
+}
+// Partner end

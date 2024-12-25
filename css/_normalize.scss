@@ -46,6 +46,10 @@ address {
     width: 100%;
     overflow: hidden;
     min-height: 100svh;
+
+    &.disabled {
+        overflow: visible;
+    }
 }
 
 ul, ol, dl {

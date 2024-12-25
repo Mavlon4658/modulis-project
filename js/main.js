@@ -230,3 +230,15 @@ const houseParentSwp = new Swiper('.house-parent', {
         swiper: houseChildSwp,
     },
 });
+
+const historySwp = new Swiper('.history .swiper', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+    direction: 'vertical',
+    breakpoints: {
+        991: {
+            spaceBetween: 60,
+        }
+    }
+})
